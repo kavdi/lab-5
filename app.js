@@ -14,7 +14,7 @@ function sum(a,b){ //eslint-disable-line
   return [result, output];
 }
 
-// TODO: Here is the test for sum(); uncomment it to run it
+// TODO:DONE Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
@@ -47,11 +47,15 @@ Test this function by hand in the console to get it working, and when you think 
 
 // TODO: Write your code here
 function sumAndMultiply(a,b,c){ //eslint-disable-line
-
+  var add = sum(sum(a,b)[0],c)[0];
+  var times = multiply(multiply(a,b)[0],c)[0];
+  var three = a + ' and ' + b + ' and ' + c + ' sum to ' + add + '.';
+  var four = 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + times + '.';
+  return [add, times, three, four];
 }
 
 // TODO: Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -65,12 +69,14 @@ Test this function by hand in the console to get it working, and when you think 
 // TODO: Write your code here
 var testArray = [2,3,4]; //eslint-disable-line
 
-function sumArray(testArray){ //eslint-disable-line
-
+function sumArray(testArray){
+  var addition = sum(sum(testArray[0], testArray[1])[0], testArray[2]);
+  var saythis = '2,3,4 was passed in as an array of numbers, and 9 is their sum.';//eslint-disable-line
+  return [addition, saythis];
 }
 
 // TODO: Here is the test for sumArray(); uncomment it to run it
-// testSumArray(testArray);
+testSumArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
