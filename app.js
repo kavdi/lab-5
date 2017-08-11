@@ -32,11 +32,7 @@ function multiply(a,b){ //eslint-disable-line
   return [result, output];
 }
 
-<<<<<<< HEAD
-// TODO:DONE Here is the test for multiply(); uncomment it to run it
-=======
 // TODO: Here is the test for multiply(); uncomment it to run it
->>>>>>> master
 testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
