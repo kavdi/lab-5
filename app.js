@@ -89,8 +89,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){
-  var times = multiply(sum(testArray[0], testArray[1])[0], testArray[2]);
-  var say = 'The numbers 2,3,4 have a product of 24.';
+  var times = multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0];
+  var say = 'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + times + '.';
   return [times, say];
   //eslint-disable-line
 
